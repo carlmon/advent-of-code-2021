@@ -85,7 +85,7 @@ func createSlidingWindow(inFile, outFile string) {
 
 func day01() {
 	fmt.Println("== DAY 01 ==")
-	countIncreases("./day-01-input.txt")
-	createSlidingWindow("./day-01-input.txt", "./day-01-sliding.txt")
+	countIncreases("./inputs/day-01-input.txt")
+	createSlidingWindow("./inputs/day-01-input.txt", "./day-01-sliding.txt")
 	countIncreases("./day-01-sliding.txt")
 }

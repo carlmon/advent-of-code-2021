@@ -12,7 +12,7 @@ import (
 func day02() {
 	fmt.Println("== DAY 02 ==")
 
-	file, err := os.Open("./day-02-input.txt")
+	file, err := os.Open("./inputs/day-02-input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
