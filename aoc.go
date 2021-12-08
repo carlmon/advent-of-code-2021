@@ -1,7 +1,5 @@
 package main
 
 func main() {
-	day01()
-	day02()
-	day03()
+	// Each gofile starts with init() - probably not a great idea...
 }
