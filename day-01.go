@@ -21,15 +21,15 @@ func countIncreases(inFile string) {
 	last := math.MaxInt32
 
 	for scanner.Scan() {
-		curr, err := strconv.Atoi(scanner.Text())
+		current, err := strconv.Atoi(scanner.Text())
 		if err != nil {
 			log.Fatal(err)
 		}
 
-		if last < curr {
+		if last < current {
 			increases++
 		}
-		last = curr
+		last = current
 	}
 
 	if err := scanner.Err(); err != nil {

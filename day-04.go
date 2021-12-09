@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-func readData(inFile string) ([]string, [][][]string, error) {
+func readBingoData(inFile string) ([]string, [][][]string, error) {
 	var numbers []string
 	var boards [][][]string
 	var line string
@@ -154,7 +154,7 @@ func sumUnmarked(numbersDict map[string]int, board [][]string, maxIndex int) (in
 func init() {
 	fmt.Println("== DAY 04 ==")
 
-	if numbers, boards, err := readData("./inputs/day-04-input.txt"); err != nil {
+	if numbers, boards, err := readBingoData("./inputs/day-04-input.txt"); err != nil {
 		log.Fatal(err)
 	} else {
 		runBingo(numbers, boards)
