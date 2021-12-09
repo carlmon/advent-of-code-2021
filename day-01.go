@@ -83,7 +83,7 @@ func createSlidingWindow(inFile, outFile string) {
 	}
 }
 
-func day01() {
+func init() {
 	fmt.Println("== DAY 01 ==")
 	countIncreases("./inputs/day-01-input.txt")
 	createSlidingWindow("./inputs/day-01-input.txt", "./day-01-sliding.txt")

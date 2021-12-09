@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	// Each gofile starts with init() - probably not a great idea...
+	// Code executed with init() in each day's go file - probably not a good idea 🤷🏻‍♂️
 }

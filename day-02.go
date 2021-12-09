@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-func day02() {
+func init() {
 	fmt.Println("== DAY 02 ==")
 
 	file, err := os.Open("./inputs/day-02-input.txt")
