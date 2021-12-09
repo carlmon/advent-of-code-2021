@@ -76,7 +76,7 @@ func parsePoint(pointComma string) (Point, error) {
 	}
 }
 
-func calculateIntersections(lines []Line, point Point) (int, int) {
+func calculateOverlaps(lines []Line, point Point) (int, int) {
 	noDiagonals := 0
 	allOverlaps := 0
 
@@ -102,13 +102,13 @@ func calculateIntersections(lines []Line, point Point) (int, int) {
 	return noDiagonals, allOverlaps
 }
 
-func doPartOne(lines []Line) {
+func findOverlaps(lines []Line) {
 	gridSize := 1000
 	allOverlaps := 0
 	straightOverlaps := 0
 	for x := 0; x < gridSize; x++ {
 		for y := 0; y < gridSize; y++ {
-			if straightCount, diagonalCount := calculateIntersections(lines, Point{x, y}); straightCount > 1 {
+			if straightCount, diagonalCount := calculateOverlaps(lines, Point{x, y}); straightCount > 1 {
 				allOverlaps++
 				straightOverlaps++
 			} else if diagonalCount > 1 {
@@ -126,6 +126,6 @@ func init() {
 	if lines, err := readLinesData("./inputs/day-05-input.txt"); err != nil {
 		log.Fatal(err)
 	} else {
-		doPartOne(lines)
+		findOverlaps(lines)
 	}
 }
