@@ -11,7 +11,7 @@ import (
 )
 
 func readCrabPositions(inFile string) (map[int]uint64, error) {
-	var data = make(map[int]uint64, 0)
+	var data = make(map[int]uint64)
 
 	file, err := os.Open(inFile)
 	if err == nil {

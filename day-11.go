@@ -97,7 +97,7 @@ func runOctoSimulation(data [][]byte, steps int) {
 }
 
 func init() {
-	fmt.Println("== DAY 10 ==")
+	fmt.Println("== DAY 11 ==")
 
 	if data, err := loadOctoData("./inputs/day-11-input.txt"); err != nil {
 		log.Fatal(err)
